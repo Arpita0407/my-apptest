@@ -15,6 +15,9 @@ public class ShopTest extends BaseTest
 		  sp.clickRviews();
 		  sp.clickDescr();
 		  sp.addToCart();
+		  sp.viewBasket();
+		  sp.applycoupan();
 	  }
+	  
 	  
 }

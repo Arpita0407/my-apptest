@@ -3,6 +3,7 @@ package tests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -19,7 +20,7 @@ public class BaseTest {
         //driver.wait(500);
     }
 
-    @AfterMethod
+    @AfterTest
     public void tearDown() 
     {
     	driver.quit();
